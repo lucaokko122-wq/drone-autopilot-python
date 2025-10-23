@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="131e9d5a-fd4c-4a10-9729-611619c89ad7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project BPLA.py" afterDir="false" />
-    </list>
+    <list default="true" id="131e9d5a-fd4c-4a10-9729-611619c89ad7" name="Changes" comment="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +82,30 @@
       <option name="presentableId" value="Default" />
       <updated>1761219812291</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;">
+      <option name="closed" value="true" />
+      <created>1761220598860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761220598860</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;" />
   </component>
 </project>
