@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>БПЛА Симулятор - Лос-Анджелес</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        #map { height: 700px; width: 900px; margin: 20px auto; border: 2px solid #333; }
+        body { font-family: Arial, sans-serif; text-align: center; }
+    </style>
+</head>
+<body>
+    <h2>Симулятор полета БПЛА - Лос-Анджелес</h2>
+    <div id="map"></div>
+
+    <script>
+        var startLat = 34.052235;
+        var startLon = -118.243683;
+
+        var map = L.map('map').setView([startLat, startLon], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        var landmarks = [
+            ["Downtown LA", startLat, startLon, "Старт"],
+            ["Hollywood Sign", 34.1341, -118.3215, "Hollywood Sign"],
+            ["Santa Monica Pier", 34.0084, -118.4978, "Santa Monica Pier"],
+            ["LAX Airport", 33.9416, -118.4085, "Аэропорт LAX"]
+        ];
+
+        landmarks.forEach(function(landmark) {
+            L.marker([landmark[1], landmark[2]])
+                .addTo(map)
+                .bindPopup(landmark[0] + "<br>" + landmark[3]);
+        });
+
+        var droneIcon = L.icon({
+            iconUrl: 'https://cdn-icons-png.flaticon.com/512/824/824100.png',
+            iconSize: [45, 45]
+        });
+
+        var droneMarker = L.marker([startLat, startLon], {icon: droneIcon}).addTo(map);
+        var routeLine = L.polyline([], {color: 'red', weight: 3}).addTo(map);
+
+        function updatePosition(lat, lon) {
+            droneMarker.setLatLng([lat, lon]);
+            routeLine.addLatLng([lat, lon]);
+            map.panTo([lat, lon]);
+        }
+
+        var routePoints = [
+            [34.052235, -118.243683],
+            [34.062235, -118.253683],
+            [34.072235, -118.263683],
+            [34.082235, -118.273683]
+        ];
+
+        var currentPoint = 0;
+        var demoInterval = setInterval(function() {
+            if (currentPoint < routePoints.length) {
+                updatePosition(routePoints[currentPoint][0], routePoints[currentPoint][1]);
+                currentPoint++;
+            } else {
+                clearInterval(demoInterval);
+            }
+        }, 1500);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>БПЛА Симулятор</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+            <style>
+                #map { height: 600px; width: 800px; margin: 20px auto; border: 2px solid #333; }
+                body { font-family: Arial; text-align: center; }
+            </style>
+        </head>
+        <body>
+            <h2>Карта полета БПЛА</h2>
+            <div id="map"></div>
+
+            <script>
+                var map = L.map('map').setView([34.052235, -118.243683], 13);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+                var droneIcon = L.icon({
+                    iconUrl: 'https://cdn-icons-png.flaticon.com/512/824/824100.png',
+                    iconSize: [40, 40]
+                });
+
+                var marker = L.marker([34.052235, -118.243683], {icon: droneIcon}).addTo(map);
+
+                function updatePosition(lat, lon) {
+                    marker.setLatLng([lat, lon]);
+                    map.panTo([lat, lon]);
+                }
+
+                // Демо движение
+                var demoLat = 34.052235;
+                setInterval(function() {
+                    demoLat += 0.0001;
+                    updatePosition(demoLat, -118.243683);
+                }, 1000);
+            </script>
+        </body>
+        </html>

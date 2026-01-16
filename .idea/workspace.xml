@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="131e9d5a-fd4c-4a10-9729-611619c89ad7" name="Changes" comment="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;" />
+    <list default="true" id="131e9d5a-fd4c-4a10-9729-611619c89ad7" name="Changes" comment="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;">
+      <change afterPath="$PROJECT_DIR$/autopilot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combat_drone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/combat_landed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drone_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drone_map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drone_map_la.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recon_drone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recon_landed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_sitl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unified_autopilot/unified_autopilot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/орёл-1_status.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/сокол-1_status.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project BPLA.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +36,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1e742502-b5c2-4d85-84f9-7b920cd91051" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="34SvVgcPIvEp6lJw0381EfL5GrT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,15 +56,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.autopilot.executor": "Run",
     "Python.project BPLA.executor": "Run",
+    "Python.test_sitl (1).executor": "Run",
+    "Python.virtualization.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="project BPLA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\PythonProject3\unified_autopilot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.virtualization">
+    <configuration name="autopilot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,7 +86,73 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project BPLA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autopilot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_sitl (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_sitl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_sitl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\user\PycharmProjects\PythonProject3\test_sitl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="virtualization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/virtualization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +163,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.project BPLA" />
+        <item itemvalue="Python.virtualization" />
+        <item itemvalue="Python.test_sitl (1)" />
+        <item itemvalue="Python.autopilot" />
+        <item itemvalue="Python.test_sitl" />
       </list>
     </recent_temporary>
   </component>
@@ -90,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761220598860</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;Добавлен базовый класс для автопилота&quot;&#10;&quot;Реализован парсинг MAVLink сообщений&quot; &#10;&quot;Исправлена ошибка в расчете координат&quot;">
+      <option name="closed" value="true" />
+      <created>1761220670667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761220670667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
