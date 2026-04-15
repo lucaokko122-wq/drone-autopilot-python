@@ -1,43 +1,41 @@
-# Autonomous UAV Guardian 🛸
+Autonomous UAV Guardian 🛸
 
-Система автономного управления БПЛА с интегрированным модулем распознавания целей "свой-чужой" и визуализацией телеметрии в реальном времени.
+An autonomous UAV control system with an integrated friend-or-foe recognition module and real-time telemetry visualization.
 
-## 📌 Описание проекта
-Данный проект представляет собой программный комплекс для управления беспилотником в режиме полной автономии. Дрон выполняет взлет, патрулирование территории, анализ объектов на земле и принятие решения о тактическом действии (доклад или симуляция удара) без участия оператора.
+📌 Project Overview
 
-### Основные возможности:
-* **Virtual Simulation**: Использование `dronekit-sitl` для полной имитации физики полета и работы GPS без наличия реального дрона.
-* **Autonomous Logic**: Автоматический цикл: проверка систем (Arming) -> Взлет -> Патрулирование -> Посадка.
-* **AI Decision Engine**: Имитация системы компьютерного зрения для классификации целей на "дружественные" и "враждебные" с учетом коэффициента уверенности (confidence).
-* **HQ Dashboard**: Генерируемая HTML-карта полета и визуальные отчеты `drone_view.png` для мониторинга состояния миссии в штабе.
-* **DevOps Logging**: Детальное логирование всех событий и команд в файл `mission_log.txt`.
+This project is a software system designed for fully autonomous drone operation.
+The UAV performs takeoff, area patrol, ground object analysis, and tactical decision-making (reporting or simulated strike) without human intervention.
 
+🚀 Key Features
+Virtual Simulation
+Uses dronekit-sitl to fully simulate flight physics and GPS behavior without requiring a physical drone.
+Autonomous Logic
+Implements a full autonomous cycle: system checks (arming) → takeoff → patrol → landing.
+AI Decision Engine
+Simulates a computer vision system to classify targets as "friendly" or "hostile" based on confidence scores.
+HQ Dashboard
+Generates an HTML-based flight map and visual reports (drone_view.png) for mission monitoring.
+DevOps Logging
+Detailed logging of all events and commands into mission_log.txt.
+🛠 Tech Stack
+Python 3.x — core development language
+DroneKit — API for communication with the flight controller via MAVLink
+ArduPilot SITL — simulation environment for testing
+Pillow (PIL) — image generation and visualization
+Leaflet.js — interactive map rendering in the browser
+⚙️ How to Run
+Install dependencies
+pip install dronekit dronekit-sitl Pillow
+Run the main script
+python unified_autopilot.py
+Monitoring
+Open hq_map.html to track the UAV position
+Check drone_view.png for simulated AI vision output
+📂 Project Structure
+unified_autopilot.py — main executable (core system)
+mission_log.txt — telemetry and event log
+drone_view.png — latest frame from the target recognition system
+⚠️ Disclaimer
 
-
-## 🛠 Технологический стек
-* **Python 3.x** — основной язык разработки.
-* **DroneKit** — API для связи с полетным контроллером по протоколу MAVLink.
-* **ArduPilot SITL** — симулятор среды для тестирования кода.
-* **Pillow (PIL)** — генерация графических отчетов и визуализация данных с "камеры".
-* **Leaflet.js** — отображение интерактивной карты в браузере.
-
-## 🚀 Запуск
-1.  **Установите зависимости**:
-    ```bash
-    pip install dronekit dronekit-sitl Pillow
-    ```
-2.  **Запустите основной скрипт**:
-    ```bash
-    python unified_autopilot.py
-    ```
-3.  **Мониторинг**:
-    * Проверьте файл `hq_map.html` для отслеживания позиции.
-    * Следите за обновлениями `drone_view.png` для просмотра результатов работы "ИИ".
-
-## 📂 Структура проекта
-* `unified_autopilot.py` — единый исполняемый файл (ядро системы).
-* `mission_log.txt` — журнал телеметрии и действий.
-* `drone_view.png` — последний кадр с системы распознавания целей.
-
----
-*Проект разработан в учебных целях для демонстрации принципов автономного управления и архитектуры ПО для БПЛА.*
+This project was developed for educational purposes to demonstrate autonomous control principles and UAV software architecture.
